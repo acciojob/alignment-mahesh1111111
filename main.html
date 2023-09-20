@@ -3,18 +3,23 @@
 <head>
   <title>HTML Assignment 3</title>
   <style>
+    /* General */
+    body {
+      font-family: sans-serif;
+    }
+
+    /* Tables */
     table {
+      border-collapse: collapse;
       border: 1px solid black;
-      border-spacing: 1px;
+      margin: 1px;
+    }
+
+    td, th {
       padding: 1px;
     }
 
     .middle {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .center {
       text-align: center;
     }
 
@@ -22,6 +27,7 @@
       text-align: right;
     }
 
+    /* Background colors */
     .green {
       background-color: green;
     }
@@ -32,41 +38,94 @@
   </style>
 </head>
 <body>
-  <h1>HTML Assignment #3</h1>
+  <!-- Heading -->
+  <h1 class="middle">HTML Assignment #3</h1>
 
-  <table class="middle">
+  <!-- Table 1 -->
+  <table id="table-1" class="middle">
     <tr>
-      <th>Table 1</th>
+      <th id="t11" class="center">Table 1</th>
+      <th id="t12">Table 1</th>
+      <th id="t13" class="right">Table 1</th>
     </tr>
     <tr>
-      <td class="t11 center">Cell 1</td>
-      <td class="t12">Cell 2</td>
-      <td class="t13 right">Cell 3</td>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+      <td>Cell 3</td>
     </tr>
     <tr>
-      <td class="center">Cell 4</td>
-      <td class="right">Cell 5</td>
+      <td>Cell 4</td>
+      <td>Cell 5</td>
       <td>Cell 6</td>
     </tr>
   </table>
 
-  <table class="middle" id="table-2">
+  <!-- Table 2 -->
+  <table id="table-2" class="middle">
+    <tr id="t21" colspan="6">Table 2</tr>
     <tr>
-      <td colspan="6" class="t21 center">This is a single cell</td>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+      <td>Cell 3</td>
+      <td>Cell 4</td>
+      <td>Cell 5</td>
+      <td>Cell 6</td>
+    </tr>
+    <tr>
+      <td>Cell 7</td>
+      <td>Cell 8</td>
+      <td>Cell 9</td>
+      <td>Cell 10</td>
+      <td>Cell 11</td>
+      <td>Cell 12</td>
+    </tr>
+    <tr>
+      <td>Cell 13</td>
+      <td>Cell 14</td>
+      <td>Cell 15</td>
+      <td>Cell 16</td>
+      <td>Cell 17</td>
+      <td>Cell 18</td>
+    </tr>
+    <tr>
+      <td>Cell 19</td>
+      <td>Cell 20</td>
+      <td>Cell 21</td>
+      <td>Cell 22</td>
+      <td>Cell 23</td>
+      <td>Cell 24</td>
+    </tr>
+    <tr>
+      <td>Cell 25</td>
+      <td>Cell 26</td>
+      <td>Cell 27</td>
+      <td>Cell 28</td>
+      <td>Cell 29</td>
+      <td>Cell 30</td>
+    </tr>
+    <tr>
+      <td>Cell 31</td>
+      <td>Cell 32</td>
+      <td>Cell 33</td>
+      <td>Cell 34</td>
+      <td>Cell 35</td>
+      <td>Cell 36</td>
     </tr>
   </table>
 
-  <table class="middle" id="table-3">
+  <!-- Table 3 -->
+  <table id="table-3" class="middle">
     <tr class="green">
-      <td rowspan="2" class="t-image">
-        <img src="https://www.w3schools.com/html/img_logo.gif" alt="W3Schools Logo">
+      <td colspan="2">Table 3</td>
+    </tr>
+    <tr>
+      <td id="t-image">
+        <img src="https://example.com/image.png" alt="Image">
       </td>
-      <td class="center">Cell 1</td>
-      <td class="right">Cell 2</td>
+      <td>Cell 2</td>
     </tr>
     <tr class="blue">
-      <td class="center">Cell 3</td>
-      <td class="right">Cell 4</td>
+      <td colspan="2">Table 3</td>
     </tr>
   </table>
 </body>
